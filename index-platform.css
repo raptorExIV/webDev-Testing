@@ -112,7 +112,7 @@ body{
 
 }
 
-.tableBtn :hover {
+ .tableNav td.tableBtn:hover {
 
     background-color: #1e1e1e;
 
