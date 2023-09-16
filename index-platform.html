@@ -2,16 +2,51 @@
 
 <html>
 
-    <head>
-        <meta name="viewport" content="width = device-width, initial-scale = 1"></meta>
+<head>
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    </meta>
 
-        <!--Proper way of importing stylesheet/css from another css file-->
-        <link rel="stylesheet" type="text/css" href="index-platform.css">
-    </head>
-        
-    <body>
+    <!--Proper way of importing stylesheet/css from another css file-->
+    <link rel="stylesheet" type="text/css" href="index-platform.css">
 
-        <!--
+    <!--<script>
+
+        var formatA = false;
+        var formatB = true;
+
+        function checkingFormats() {
+
+            if (formatA) {
+                console.log("Format A present.");
+            }
+
+            else if (formatB) {
+                console.log("Format B present.");
+            }
+        }
+
+        function switchFormat() {
+
+            if (formatA && !formatB) {
+                formatA = false;
+                formatB = true;
+            }
+
+            else if (formatB && !formatA) {
+                formatB = false;
+                formatA = true;
+            }
+
+            checkingFormats();
+        }
+
+    </script>-->
+
+</head>
+
+<body>
+
+    <!--
         <div class="topNav">
 
             <img src="images/rEXiV-2.png">
@@ -26,30 +61,38 @@
 
         </div> -->
 
-        <!--Navigation Bar Block-->
-        <div class="tableDivNav">
+    <!--Navigation Bar Block-->
+    <div id="navigationBarBlk" class="tableDivNav">
 
-            <table class="tableNav" style="width:100%; table-layout: fixed;">
+        <table class="tableNav" style="width:100%; table-layout: fixed;">
 
-                <tr class="tableNav">
-                    
-                    <td style="padding: 0%; width: 55px; height: 55px;"><img src="images/rEXiV-2.png"> </td>
+            <tr class="tableNav">
 
-                    <td style="padding-left: 15px; padding-right: 15px;">Brendan Tan Yuan Xi</td>
+                <td style="padding: 0%; width: 55px; height: 55px;"><img src="images/rEXiV-2.png"> </td>
 
-                    <td class="active tableBtn"><a href="">Home</a></td>
+                <td style="padding-left: 15px; padding-right: 15px;">Brendan Tan Yuan Xi</td>
 
-                    <td class="tableBtn"><a href="">Delta</a></td>
+                <td class="active tableBtn"><a href="">Home</a></td>
 
-                    <td class="tableBtn"><a href="">Echo</a></td>
+                <td class="tableBtn"><a href="index2-platform.html">Delta</a></td>
 
-                    <td class="tableBtn"><a href="">Proto-One</a></td>
-                
-                </tr>
+                <td class="tableBtn"><a href="">Echo</a></td>
 
-            </table>
+                <td class="tableBtn"><a href="">Proto-One</a></td>
+
+            </tr>
+
+        </table>
+    </div>
+
+    <div>
+        <div class="button">
+            <button type="button" onclick="switchFormat()">Click</button>
         </div>
+    </div>
 
-    </body>
+</body>
+
+<head><script src="index.js"></script></head>
 
 </html>
