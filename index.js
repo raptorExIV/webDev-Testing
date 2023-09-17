@@ -1,5 +1,6 @@
-var formatA = false;
-var formatB = true;
+
+var formatA = true;
+var formatB = false;
 
 function checkingFormats() {
 

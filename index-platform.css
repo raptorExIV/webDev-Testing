@@ -127,3 +127,22 @@ body{
     display: block;
 
 }
+
+.footer{
+
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+
+    text-align: center;
+
+    position: fixed;
+
+    background-color: #04AA6D;
+    color: #f2f2f2;
+
+}
