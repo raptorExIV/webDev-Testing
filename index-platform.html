@@ -9,86 +9,95 @@
     <!--Proper way of importing stylesheet/css from another css file-->
     <link rel="stylesheet" type="text/css" href="index-platform.css">
 
-    <!--<script>
-
-        var formatA = false;
-        var formatB = true;
-
-        function checkingFormats() {
-
-            if (formatA) {
-                console.log("Format A present.");
-            }
-
-            else if (formatB) {
-                console.log("Format B present.");
-            }
-        }
-
-        function switchFormat() {
-
-            if (formatA && !formatB) {
-                formatA = false;
-                formatB = true;
-            }
-
-            else if (formatB && !formatA) {
-                formatB = false;
-                formatA = true;
-            }
-
-            checkingFormats();
-        }
-
-    </script>-->
-
 </head>
 
 <body>
 
-    <!--
-        <div class="topNav">
-
-            <img src="images/rEXiV-2.png">
-
-            <a class="active" href="#home">Home</a>
-
-            <a href="navigation-delta.html">Delta</a>
-
-            <a href="navigation-echo.html">Echo</a>
-
-            <a href="protoform-one.html">Proto-One</a>
-
-        </div> -->
-
     <!--Navigation Bar Block-->
-    <div id="navigationBarBlk" class="tableDivNav">
+    <div id="navigationBarBlk" class="" style="padding-left: 10%; padding-right: 10%; background-color: #2A2A2A; margin-left: auto; margin-right: auto;">
 
-        <table class="tableNav" style="width:100%; table-layout: fixed;">
+        <table class="tableNav" style="width: 100%; padding-left: 10%; padding-right: 10%;">
 
-            <tr class="tableNav">
+            <tr class="tableNav" style="">
 
-                <td style="padding: 0%; width: 55px; height: 55px;"><img src="images/rEXiV-2.png"> </td>
+                <td style="width: 10%; padding: 0%;"></td>
 
-                <td style="padding-left: 15px; padding-right: 15px;">Brendan Tan Yuan Xi</td>
+                <td style="width: 60px; height: 60px; padding: 0%;"><img src="images/rEXiV-2.png"> </td>
 
-                <td class="active tableBtn"><a href="">Home</a></td>
+                <td style="padding-left: 15px; padding-right: 15px;">BRENDAN TAN YUAN XI</td>
 
-                <td class="tableBtn"><a href="index2-platform.html">Delta</a></td>
+                <td class="active tableBtn"><a href="">HOME</a></td>
 
-                <td class="tableBtn"><a href="">Echo</a></td>
+                <td class="tableBtn"><a href="index2-platform.html">ABOUT</a></td>
 
-                <td class="tableBtn"><a href="">Proto-One</a></td>
+                <td class="tableBtn"><a href="">PROJECTS</a></td>
+
+                <td class="tableBtn"><a href="">CONTACT</a></td>
+
+                <td style="width: 10%; padding: 0%;"></td>
 
             </tr>
 
         </table>
     </div>
 
-    <div>
+    <!--<div>
         <div class="button">
             <button type="button" onclick="switchFormat()">Click</button>
         </div>
+    </div>-->
+
+    <!--Image Block-->
+    <div style="padding: 0%; margin: 0%; background-color: black;">
+
+        <div style="position: relative;">
+
+            <table style="width: 100%; height: auto; padding: 0%; margin: 0%; border-collapse: collapse;">
+
+                <tr style="padding: 0%; margin: 0%; width: 100%;">
+    
+                    <td style="width: 10%;"></td>
+    
+                    <td style="padding: 0%; margin: 0%;"><img src="/images/battleCore.jpg" alt="" style="width: 100%; height: 100vh; display: block; object-fit: cover;"></td>
+    
+                    <td style="width: 10%;"></td>
+    
+                </tr>
+
+            </table>
+
+        </div>
+
+        <div class="hidden" style="position: absolute; top: 70%; left: 65%; transform: translate(-50%, -50%);">
+
+            <p style="font-size: 40px; color: whitesmoke;">Hello there! I am Brendan.</p>
+
+            <p style="font-size: 24px; color: whitesmoke;">I am a 2D and 3D Artist, Game Designer and Developer. I am also a self-taught Web Designer and Developer.</p>
+
+        </div>
+    </div>
+
+    <!--Text block 01-->
+    <div class="hidden" style="padding: 0% 10% 0% 10%; margin: 0%;">
+
+        <table class="" style="max-width: 100%; margin: 0%; padding-left: 10%; padding-right: 10%; background-color: #CFEEF7; border-collapse: collapse; ">
+
+            <tr style="height: 15VH;"></tr>
+
+            <tr>
+                <td style="text-align: center; font-size: 24px; padding-left: 10%; padding-right: 10%;"> Welcome to my online portfolio website where I showcase my projects compromising of graphic design and drawings, game and website designs and developed products. </td>
+            </tr>
+
+            <tr style="height: 15VH;"></tr>
+
+            <tr>
+                <td style="text-align: center; font-size: 24px; padding-left: 10%; padding-right: 10%;"> These are some of my personal favorites!</td>
+            </tr>
+            
+            <tr style="height: 5VH;"></tr>
+
+        </table>
+
     </div>
 
 </body>
@@ -99,10 +108,56 @@
 
     </script>
 
+    <div class="bodytesting hidden" style="padding-left: 2%; padding-top: 5%; padding-bottom: 5%;">
+
+        <div class="hidden">
+
+            <h1>Header 1</h1>
+
+            <p> For the reality of eternity</p>
+
+        </div>
+
+        <div style="height: 30cm;">
+
+        </div>
+
+        <div class="hidden">
+
+            <h1>Header 2</h1>
+
+            <p> For the reality of eternity</p>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        const observer = new IntersectionObserver((enteries) => {
+            enteries.forEach((entry) => {
+        
+                //console.log(entry)
+                if (entry.isIntersecting){
+                    entry.target.classList.add('show');
+                } else {
+                    entry.target.classList.remove('show');
+                }
+            });
+
+            //console.log("WEE");
+        });
+
+        const hiddenElements = document.querySelectorAll(".hidden");
+        hiddenElements.forEach((el) => observer.observe(el));
+        //console.log(hiddenElements);
+
+    </script>
+
 </head>
 
-<div class="footer">
+<!--<div class="footer">
     &copy Copyright 2023 Designed by Brendan Raptor Tan Yuan Xi
-</div>
+</div>-->
 
 </html>

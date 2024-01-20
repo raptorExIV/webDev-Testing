@@ -2,6 +2,7 @@
 var formatA = true;
 var formatB = false;
 
+
 function checkingFormats() {
 
     if (formatA) {

@@ -2,6 +2,8 @@ body{
 
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #A1DDF0;
 }
 
 /*
@@ -61,24 +63,23 @@ body{
 
 .tableNav {
 
-    max-height: 55px;
+    max-height: 60px;
     width: 100%;
 
-    display: inline-block;
+    display: table;
     color: #f2f2f2;
-    background-color: #333;
-    font-size: 15px;
+    background-color: #2A2A2A;
+    font-size: 20px;
 
     border-collapse: collapse;
     border-spacing: 0px;
 
-    
-    
+
 }
 
 .tableNav td {
 
-    background-color: #333;
+    background-color: #2A2A2A;
 
     padding-top: 0px;
     padding-bottom: 0px; 
@@ -86,7 +87,10 @@ body{
     padding-right: 5px;
 
     border-spacing: 0px;
-    height: 55px;
+    height: 60px;
+
+    text-align: center;
+    align-content: center;
     
 }
 
@@ -98,17 +102,21 @@ body{
     padding: 5px 5px;
     text-decoration: none;
 
+    width: 100%;
+
+
 }
 
 .tableNav tr {
 
-    height: 55px;
+    height: 60px;
 }
 
-.tableNav td.active {
+.tableNav td.active a {
 
-    background-color: #04AA6D;
     color: white;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
 
 }
 
@@ -120,12 +128,23 @@ body{
 
 .tableNav img {
 
-    max-width: 100%;
-    max-height: 100%;
-    padding: 0px;
+    max-width: 60px;
+    max-height: 60px;
 
     display: block;
 
+}
+
+.tableBlank {
+
+    width: 40%;
+}
+
+.pagebody {
+
+    background-color: #CFEEF7;
+
+    
 }
 
 .footer{
@@ -145,4 +164,23 @@ body{
     background-color: #04AA6D;
     color: #f2f2f2;
 
+}
+
+.bodytesting{
+
+    display: grid;
+
+    place-items: center;
+
+    align-content: center;
+}
+
+.hidden{
+    opacity: 0;
+    transition: all 1.5s;
+
+}
+
+.show{
+    opacity: 1;
 }
