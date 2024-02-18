@@ -31,9 +31,6 @@ body{
     border-collapse: collapse;
     border-spacing: 0px;
 
-    padding-left: 10%;
-    padding-right: 10%;
-
 }
 
 .tableNav td {
@@ -97,6 +94,34 @@ body{
     display: block;
 
 }
+
+.aniHover{
+
+    animation-name: navAnimation;
+
+    animation-duration: 0.85s;
+
+}
+
+@keyframes navAnimation{
+
+    from {transform:translateY(-100%);} to {transform: translateY(0%);}
+
+}
+
+.aniHoverExit{
+
+    animation-name: navExit;
+
+    animation-duration: 0.85s;
+}
+
+@keyframes navExit{
+
+    from {transform:translateY(0%);} to {transform: translateY(-100%);}
+
+}
+
 
 .tableBlank {
     

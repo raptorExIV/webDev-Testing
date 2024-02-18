@@ -39,6 +39,8 @@ function checkingFormats() {
 
                 '<td id="navName" style="padding-left: 15px; padding-right: 15px;">BRENDAN (RAPTOR) TAN YUAN XI</td>' +
 
+                '<td style="width: 75px; height: 75px;"><img src="images/rEXiV-2.png" onclick="enterExcel()"></td>' +
+
             '</tr>' +
 
         '</table>'
@@ -47,3 +49,84 @@ function checkingFormats() {
 }
 
 window.addEventListener("resize", checkingFormats);
+
+var mobileNavExpand = false;
+
+function enterExcel(){
+
+    if (!mobileNavExpand){
+
+        mobileNavExpand = true;
+
+    }
+
+    else if (mobileNavExpand){
+
+        mobileNavExpand = false;
+    }
+
+    expandMobileNav();
+}
+
+function expandMobileNav(){
+
+    if (mobileNavExpand) {
+
+        document.getElementById("navigationBarBlk").innerHTML =
+
+        '<table class="tableNav">' +
+
+            '<tr class="tableNav">' +
+
+                '<td id="navLogoImg" style="width: 75px; height: 75px;"><img src="images/rEXiV-2.png"> </td>' +
+
+                '<td id="navName" style="padding-left: 5%; padding-right: 5%;">BRENDAN (RAPTOR) TAN YUAN XI</td>' +
+
+                '<td style="width: 75px; height: 75px;"><img src="images/rEXiV-2.png" onclick="enterExcel()"></td>' +
+
+            '</tr>' +
+
+            '<tr id="navExpandList" class="tableNav aniHover">' +
+
+                '<td id="" class="active tableBtn"><a href="">HOME</a></td>' +
+
+            '</tr>' +
+
+            '<tr id="navExpandList" class="tableNav aniHover">' +
+
+                '<td id="" class="active tableBtn"><a href="">ABOUT</a></td>' +
+
+            '</tr>' +
+
+            '<tr id="navExpandList" class="tableNav aniHover">' +
+
+                '<td id="" class="active tableBtn"><a href="">PROEJCTS</a></td>' +
+
+            '</tr>' +
+
+            '<tr id="navExpandList" class="tableNav aniHover">' +
+
+                '<td id="" class="active tableBtn"><a href="">CONTACT</a></td>' +
+
+            '</tr>' +
+
+        '</table>'
+    }
+
+    if (!mobileNavExpand) {
+
+        document.getElementById("navigationBarBlk").innerHTML =
+
+        '<table class="tableNav">' +
+
+        '<tr class="tableNav">' +
+
+            '<td id="navLogoImg" style="width: 75px; height: 75px;"><img src="images/rEXiV-2.png"> </td>' +
+
+            '<td id="navName" style="padding-left: 5%; padding-right: 5%;">BRENDAN (RAPTOR) TAN YUAN XI</td>' +
+
+            '<td style="width: 75px; height: 75px;"><img src="images/rEXiV-2.png" onclick="enterExcel()"></td>' +
+
+        '</tr>'
+    }
+}
