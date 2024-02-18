@@ -20,17 +20,17 @@
 
             <tr class="tableNav">
 
-                <td style="width: 75px; height: 75px; padding: 0%;"><img src="images/rEXiV-2.png"> </td>
+                <td id="navLogoImg" style="width: 75px; height: 75px; padding: 0%;"><img src="images/rEXiV-2.png"> </td>
 
-                <td style="padding-left: 15px; padding-right: 15px;">BRENDAN (RAPTOR) TAN YUAN XI</td>
+                <td id="navName" style="padding-left: 15px; padding-right: 15px;">BRENDAN (RAPTOR) TAN YUAN XI</td>
 
-                <td class="active tableBtn"><a href="">HOME</a></td>
+                <td id="navHomeBtn" class="active tableBtn"><a href="">HOME</a></td>
 
-                <td class="tableBtn"><a href="">ABOUT</a></td>
+                <td id="navAboutBtn" class="tableBtn"><a href="">ABOUT</a></td>
 
-                <td class="tableBtn"><a href="">PROJECTS</a></td>
+                <td id="navProjectsBtn" class="tableBtn"><a href="">PROJECTS</a></td>
 
-                <td class="tableBtn"><a href="">CONTACT</a></td>
+                <td id="navContactBtn" class="tableBtn"><a href="">CONTACT</a></td>
 
             </tr>
 
@@ -124,7 +124,7 @@
 
                         <tr>
 
-                            <td style="width: 26.66%">
+                            <td style="width: 26.66%; height: 26.66%;">
 
                                 <a href=""><img src="images/rXz-1.jpg"></a>
 
@@ -132,7 +132,7 @@
 
                             <td style=" width: 10%;"></td>
 
-                            <td style="width: 26.66%">
+                            <td style="width: 26.66%; height: 26.66%;">
 
                                 <a href=""><img src="images/2018 Faces - 4.jpg"></a>
 
@@ -140,7 +140,7 @@
 
                             <td style="width: 10%;"></td>
 
-                            <td style="width: 26.66%;">
+                            <td style="width: 26.66%; height: 26.66%;">
 
                                 <a href=""><img src="images/rXz-3.png"></a>
 
@@ -274,7 +274,6 @@
         const observer = new IntersectionObserver((enteries) => {
             enteries.forEach((entry) => {
         
-                //console.log(entry)
                 if (entry.isIntersecting){
                     entry.target.classList.add('show');
                 } else {
@@ -286,7 +285,6 @@
 
         const hiddenElements = document.querySelectorAll(".hidden");
         hiddenElements.forEach((el) => observer.observe(el));
-        //console.log(hiddenElements);
 
         const heightOutput = document.querySelector("#height");
         const widthOutput = document.querySelector("#width");

@@ -1,56 +1,43 @@
 
-var formatA = true;
-var formatB = false;
-
-
 function checkingFormats() {
 
-    if (formatA) {
-        console.log("Format A present.");
+
+    if (window.innerWidth > 670) {
 
         document.getElementById("navigationBarBlk").innerHTML =
 
-        '<table class="tableNav" style="width:100%; table-layout: fixed;">' +
+        '<table class="tableNav" style="width: 100%; padding-left: 10%; padding-right: 10%;">' +
 
             '<tr class="tableNav">' +
 
-                '<td style="padding: 0%; width: 55px; height: 55px;"><img src="images/rEXiV-2.png"> </td>' +
+                '<td id="navLogoImg" style="width: 75px; height: 75px; padding: 0%;"><img src="images/rEXiV-2.png"> </td>' +
 
-                '<td style="padding-left: 15px; padding-right: 15px;">Brendan Tan Yuan Xi</td>' +
+                '<td id="navName" style="padding-left: 15px; padding-right: 15px;">BRENDAN (RAPTOR) TAN YUAN XI</td>' +
 
-                '<td class="active tableBtn"><a href="">Home</a></td>' +
+                '<td id="navHomeBtn" class="active tableBtn"><a href="">HOME</a></td>' +
 
-                '<td class="tableBtn"><a href="index2-platform.html">Delta</a></td>' +
+                '<td id="navAboutBtn" class="tableBtn"><a href="">ABOUT</a></td>' +
 
-                '<td class="tableBtn"><a href="">Echo</a></td>' +
+                '<td id="navProjectsBtn" class="tableBtn"><a href="">PROJECTS</a></td>' +
 
-                '<td class="tableBtn"><a href="">Proto-One</a></td>' +
+                '<td id="navContactBtn" class="tableBtn"><a href="">CONTACT</a></td>' +
 
             '</tr>' +
 
         '</table>'
     }
 
-    else if (formatB) {
-        console.log("Format B present.");
+    if (window.innerWidth < 670) {
 
         document.getElementById("navigationBarBlk").innerHTML =
 
-        '<table class="tableNav" style="width:100%; table-layout: fixed;">' +
+        '<table class="tableNav" style="width: 100%; padding-left: 10%; padding-right: 10%;">' +
 
             '<tr class="tableNav">' +
 
-                '<td style="padding: 0%; width: 55px; height: 55px;"><img src="images/rEXiV-2.png"> </td>' +
+                '<td id="navLogoImg" style="width: 75px; height: 75px; padding: 0%;"><img src="images/rEXiV-2.png"> </td>' +
 
-                '<td style="padding-left: 15px; padding-right: 15px;">Brendan Tan Yuan Xi</td>' +
-
-                '<td class="active tableBtn"><a href="">rXz</a></td>' +
-
-                '<td class="tableBtn"><a href="index2-platform.html">RZII</a></td>' +
-
-                '<td class="tableBtn"><a href="">AxIOn</a></td>' +
-
-                '<td class="tableBtn"><a href="">Orion</a></td>' +
+                '<td id="navName" style="padding-left: 15px; padding-right: 15px;">BRENDAN (RAPTOR) TAN YUAN XI</td>' +
 
             '</tr>' +
 
@@ -59,17 +46,4 @@ function checkingFormats() {
     }
 }
 
-function switchFormat() {
-
-    if (formatA && !formatB) {
-        formatA = false;
-        formatB = true;
-    }
-
-    else if (formatB && !formatA) {
-        formatB = false;
-        formatA = true;
-    }
-
-    checkingFormats();
-}
+window.addEventListener("resize", checkingFormats);
