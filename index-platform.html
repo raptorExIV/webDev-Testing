@@ -7,20 +7,24 @@
     </meta>
 
     <!--Proper way of importing stylesheet/css from another css file-->
+    <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="stylesheet" type="text/css" href="index-platform.css">
+
+    <title>Brendan (Raptor) Tan Yuan Xi</title>
 
 </head>
 
 <body>
 
     <!--Navigation Bar Block-->
-    <div id="navigationBarBlk" class="navBarBlk" style="padding-left: 10%; padding-right: 10%; margin-left: auto; margin-right: auto;">
+    <div id="navigationBarBlk" class="navBarBlk">
 
-        <table class="tableNav" style="width: 100%; padding-left: 10%; padding-right: 10%;">
+        <table class="tableNav">
 
             <tr class="tableNav">
 
-                <td id="navLogoImg" style="width: 75px; height: 75px; padding: 0%;"><img src="images/rEXiV-2.png"> </td>
+                <!--Logo Image in the Navigation Block-->
+                <td id="navLogoImg" style="width: 75px; height: 75px;"><img src="images/rEXiV-2.png"> </td>
 
                 <td id="navName" style="padding-left: 15px; padding-right: 15px;">BRENDAN (RAPTOR) TAN YUAN XI</td>
 
@@ -45,21 +49,21 @@
     </div>-->
 
     <!--Image Block-->
-    <!--<div style="padding: 0%; margin: 0%; background-color: black;">
+    <div style="padding: 0%; margin: 0%; background-color: black;">
 
         <div style="position: relative;">
 
             <table style="width: 100%; height: auto; padding: 0%; margin: 0%; border-collapse: collapse;">
 
-                <tr style="padding: 0%; margin: 0%; width: 100%;">-->
+                <tr style="padding: 0%; margin: 0%; width: 100%;">
     
                     <!--Empty Block-->
-                    <!--<td style="width: 10%; display: block;"></td>
+                    <td style="width: 10%; display: block;"></td>
     
-                    <td style="padding: 0%; margin: 0%;"><img src="images/battleCore.png" alt="" style="width: 100%; height: 100vh; display: block; object-fit: cover;"></td>-->
+                    <td style="padding: 0%; margin: 0%;"><img src="images/battleCore.png" alt="" style="width: 100%; height: 100vh; display: block; object-fit: cover;"></td>
     
                     <!--Empty Block-->
-                    <!--<td style="width: 10%; display: block;"></td>
+                    <td style="width: 10%; display: block;"></td>
     
                 </tr>
 
@@ -75,7 +79,7 @@
 
         </div>
 
-    </div>-->
+    </div>
 
     <!--Text block 01-->
     <div class="displayBlock" style="padding: 0% 10% 0% 10%; margin: 0%;">
@@ -225,13 +229,6 @@
 
             <tr style="height: 20vh;"></tr>
 
-            <tr>
-                <td  style="text-align: center; font-size: 24px; padding-left: 10%; padding-right: 10%;">
-                    <p>Window height: <span id="height"></span></p>
-                    <p>Window width: <span id="width"></span></p>
-                </td>
-            </tr>
-
         </table>
     
     </div>
@@ -244,12 +241,12 @@
             <tr>
                 <td>
 
-                    <div style="color: #CFEEF7; font-size: 24px;">
+                    <div style="color: #f2f2f2; font-size: 24px;">
 
                         <br>
 
                         Interested to work together?<br><br>
-                        Email me <a href="" style="text-decoration: underline; color:#CFEEF7 ;">here</a>
+                        Email me <a href="" style="text-decoration: underline; color:#f2f2f2 ;">here</a>
 
                         <br><br>
                         <br><br>
@@ -264,21 +261,21 @@
                 </td>
 
                 <td>
-                    <div style="color: #CFEEF7; font-size: 24px; text-align: right;">
+                    <div style="color: #f2f2f2; font-size: 24px; text-align: right;">
                     
-                        <a href="" style="text-decoration: underline; color: #CFEEF7;">HOME</a>
+                        <a href="" style="text-decoration: underline; color: #f2f2f2;">HOME</a>
 
                         <br><br>
 
-                        <a href="" style="text-decoration: underline; color: #CFEEF7;">ABOUT</a>
+                        <a href="" style="text-decoration: underline; color: #f2f2f2;">ABOUT</a>
 
                         <br><br>
 
-                        <a href="" style="text-decoration: underline; color: #CFEEF7;">PROEJCTS</a>
+                        <a href="" style="text-decoration: underline; color: #f2f2f2;">PROEJCTS</a>
                         
                         <br><br>
                         
-                        <a href="" style="text-decoration: underline; color: #CFEEF7;">CONTACT</a>
+                        <a href="" style="text-decoration: underline; color: #f2f2f2;">CONTACT</a>
 
                     </div>
                 </td>
@@ -311,17 +308,6 @@
 
         const hiddenElements = document.querySelectorAll(".hidden");
         hiddenElements.forEach((el) => observer.observe(el));
-
-        const heightOutput = document.querySelector("#height");
-        const widthOutput = document.querySelector("#width");
-
-        function updateSize() {
-            heightOutput.textContent = window.innerHeight;
-            widthOutput.textContent = window.innerWidth;
-        }
-
-        updateSize();
-        window.addEventListener("resize", updateSize);
 
     </script>
 

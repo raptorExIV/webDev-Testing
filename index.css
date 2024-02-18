@@ -1,0 +1,197 @@
+body{
+
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #A1DDF0;
+    /*background-color: red;*/
+}
+
+.navBarBlk {
+
+    background-color: #090909;
+
+    padding-left: 10%;
+    padding-right: 10%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.tableNav {
+    
+    width: 100%;
+    max-height: 75px;
+    
+    display: table;
+    color: #f2f2f2;
+    background-color: #090909;
+
+    border-collapse: collapse;
+    border-spacing: 0px;
+
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+.tableNav td {
+    
+    background-color: #090909;
+
+    padding-top: 0px;
+    padding-bottom: 0px; 
+    padding-left: 5px;
+    padding-right: 5px;
+
+    border-spacing: 0px;
+
+    height: 75px;
+
+    text-align: center;
+    align-content: center;
+    
+}
+
+.tableNav a {
+    
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 5px 5px;
+    text-decoration: none;
+
+    width: 100%;
+
+
+}
+
+.tableNav tr {
+    
+    height: 75px;
+}
+
+.tableNav td.active a {
+    
+    color: white;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+
+}
+
+.tableNav td.tableBtn:hover {
+    
+    background-color: #1e1e1e;
+    text-decoration: underline;
+
+}
+
+.tableNav img {
+    
+    max-width: 75px;
+    max-height: 75px;
+
+    padding: 0%;
+
+    display: block;
+
+}
+
+.tableBlank {
+    
+    width: 40%;
+}
+
+.pagebody {
+    
+    background-color: #CFEEF7;
+
+}
+
+.displayBlock {
+
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+.displayTable {
+
+    background-color: #CFEEF7;
+
+    border-collapse: collapse;
+    border: 0px;
+
+    padding: 0%;
+    
+    margin: 0%;
+
+    width: 100%;
+    height: 100%;
+}
+
+.displayTable tr {
+
+
+    height: 100%;
+    width: 100%;
+
+    padding: 0%;
+    
+
+}
+
+.displayTable td {
+
+    height: 100%;
+    width: 80;
+
+    padding: 0%;
+    margin-left: auto;
+    margin-right: auto;
+
+    align-content: center;
+
+}
+
+.displayTable td.displayBlank {
+
+    width: 10%;
+}
+
+.displayTable img {
+
+    display: block;
+
+    height: 100%;
+    width: 100%;
+
+}
+
+.displayTable a {
+
+    font-size: 24px;
+    color: #1e1e1e;
+    text-decoration: underline;
+    text-decoration-line: 2px;
+}
+
+.bodytesting{
+    
+    display: grid;
+
+    place-items: center;
+
+    align-content: center;
+}
+
+.hidden{
+    opacity: 0;
+    transition: all 1.5s;
+
+}
+
+.show{
+    opacity: 1;
+}
