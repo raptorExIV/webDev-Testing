@@ -130,3 +130,8 @@ function expandMobileNav(){
         '</tr>'
     }
 }
+
+function alertPop(){
+            
+    document.getElementById("alertBody").style.display = 'none';
+}
