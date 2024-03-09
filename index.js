@@ -39,7 +39,7 @@ function checkingFormats() {
 
                 '<td id="navName" style="padding-left: 15px; padding-right: 15px;">BRENDAN (RAPTOR) TAN YUAN XI</td>' +
 
-                '<td style="width: 75px; height: 75px;"><img src="images/rEXiV-2.png" onclick="enterExcel()"></td>' +
+                '<td style="width: 75px; height: 75px;"><img src="images/HamBurger.png" onclick="enterExcel()"></td>' +
 
             '</tr>' +
 
@@ -82,7 +82,7 @@ function expandMobileNav(){
 
                 '<td id="navName" style="padding-left: 5%; padding-right: 5%;">BRENDAN (RAPTOR) TAN YUAN XI</td>' +
 
-                '<td style="width: 75px; height: 75px;"><img src="images/rEXiV-2.png" onclick="enterExcel()"></td>' +
+                '<td style="width: 75px; height: 75px;"><img src="images/HamBurger.png" onclick="enterExcel()"></td>' +
 
             '</tr>' +
 
@@ -125,7 +125,7 @@ function expandMobileNav(){
 
             '<td id="navName" style="padding-left: 5%; padding-right: 5%;">BRENDAN (RAPTOR) TAN YUAN XI</td>' +
 
-            '<td style="width: 75px; height: 75px;"><img src="images/rEXiV-2.png" onclick="enterExcel()"></td>' +
+            '<td style="width: 75px; height: 75px;"><img src="images/HamBurger.png" onclick="enterExcel()"></td>' +
 
         '</tr>'
     }
