@@ -14,13 +14,13 @@ function checkingFormats() {
 
                 '<td id="navName" style="padding-left: 15px; padding-right: 15px;">BRENDAN (RAPTOR) TAN YUAN XI</td>' +
 
-                '<td id="navHomeBtn" class="active tableBtn"><a href="">HOME</a></td>' +
+                '<td id="navHomeBtn" class="tableBtn"><a href="">HOME</a></td>' +
 
                 '<td id="navAboutBtn" class="tableBtn"><a href="">ABOUT</a></td>' +
 
                 '<td id="navProjectsBtn" class="tableBtn"><a href="">PROJECTS</a></td>' +
 
-                '<td id="navContactBtn" class="tableBtn"><a href="">CONTACT</a></td>' +
+                '<td id="navContactBtn" class="tableBtn"><a href="contact-platform.html">CONTACT</a></td>' +
 
             '</tr>' +
 
@@ -66,6 +66,9 @@ function enterExcel(){
     }
 
     expandMobileNav();
+
+    activePageID();
+
 }
 
 function expandMobileNav(){
@@ -88,25 +91,25 @@ function expandMobileNav(){
 
             '<tr id="navExpandList" class="tableNav aniHover">' +
 
-                '<td id="" class="active tableBtn"><a href="">HOME</a></td>' +
+                '<td id="" class="tableBtn"><a href="">HOME</a></td>' +
 
             '</tr>' +
 
             '<tr id="navExpandList" class="tableNav aniHover">' +
 
-                '<td id="" class="active tableBtn"><a href="">ABOUT</a></td>' +
+                '<td id="" class="tableBtn"><a href="">ABOUT</a></td>' +
 
             '</tr>' +
 
             '<tr id="navExpandList" class="tableNav aniHover">' +
 
-                '<td id="" class="active tableBtn"><a href="">PROEJCTS</a></td>' +
+                '<td id="" class="tableBtn"><a href="">PROEJCTS</a></td>' +
 
             '</tr>' +
 
             '<tr id="navExpandList" class="tableNav aniHover">' +
 
-                '<td id="" class="active tableBtn"><a href="">CONTACT</a></td>' +
+                '<td id="" class="tableBtn"><a href="contact-platform.html">CONTACT</a></td>' +
 
             '</tr>' +
 
@@ -131,7 +134,45 @@ function expandMobileNav(){
     }
 }
 
+function activePageID(){
+
+    const pageID = document.body.id;
+
+    const targetNav = "nav" + pageID + "Btn";
+
+    if (document.getElementById(targetNav).attributes[1] != "tableBtn active"){
+
+        document.getElementById(targetNav).classList.add("active");
+
+        return;
+
+    }
+
+    if (document.getElementById(targetNav).attributes[1] == "tableBtn active"){
+
+        document.getElementById(targetNav).classList.remove("active")
+
+        return;
+    }
+
+}
+
+activePageID();
+
+let alertBody = document.getElementById('alertBody');
+
 function alertPop(){
             
-    document.getElementById("alertBody").style.display = 'none';
+    alertBody.style.display = 'none';
+    alertStatus = false;
+
+}
+
+function alertGone(){
+
+    if (!alertStatus){
+        
+        alertBody.style.display = 'none';
+
+    }
 }

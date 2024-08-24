@@ -1,10 +1,15 @@
 body{
 
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif, Arial, Helvetica;
 
     background-color: #A1DDF0;
     /*background-color: red;*/
+}
+
+a:link, a:visited {
+
+    color: #1e1e1e;
 }
 
 .navBarBlk {
@@ -69,6 +74,13 @@ body{
     height: 75px;
 }
 
+.tableNav td.active {
+
+    /*background-color: rgb(26, 26, 26);*/
+
+    background-color: #1e1e1e;
+}
+
 .tableNav td.active a {
     
     color: white;
@@ -93,6 +105,17 @@ body{
 
     display: block;
 
+}
+
+.genericTable {
+
+    margin: 0%;
+
+    padding: 0%;
+
+    border: 0px;
+
+    border-collapse: collapse;
 }
 
 .aniHover{
@@ -248,7 +271,7 @@ body{
 
 .hidden{
     opacity: 0;
-    transition: all 1.5s;
+    /*transition: all 1.5s;*/
 
 }
 
